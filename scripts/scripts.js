@@ -63,7 +63,7 @@ function decorateExampleModals(main) {
   simpleModalButton.addEventListener('click', async (e) => {
     e.preventDefault();
     // Modals can be imported on-demand to prevent loading unnecessary code
-    const { default: getModal } = await import('./blocks/modal/modal.js');
+    const { default: getModal } = await import('../blocks/modal/modal.js');
     const simpleModal = await getModal('simple-modal', () => '<h2>Simple Modal Content</h2>');
     simpleModal.showModal();
   });
@@ -71,7 +71,7 @@ function decorateExampleModals(main) {
   // Listens to the custom modal button
   customModalButton.addEventListener('click', async (e) => {
     e.preventDefault();
-    const { default: getModal } = await import('./blocks/modal/modal.js');
+    const { default: getModal } = await import('../blocks/modal/modal.js');
     const customModal = await getModal('custom-modal', () => `
       <h2>Custom Modal</h2>
       <p>This is some content in the custom modal.</p>
