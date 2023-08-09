@@ -96,7 +96,7 @@ export function decorateMain(main) {
   buildAutoBlocks(main);
   decorateSections(main);
   decorateBlocks(main);
-  decorateExampleModals(main);
+  //decorateExampleModals(main);
 }
 
 /**
