@@ -55,7 +55,7 @@ function buildAutoBlocks(main) {
   }
 }
 
-function decorateExampleModals(main) {
+/*function decorateExampleModals(main) {
   const simpleModalButton = main.querySelector('a.button[href="http://modal-demo.simple"]');
   const customModalButton = main.querySelector('a.button[href="http://modal-demo.custom"]');
 
@@ -82,7 +82,7 @@ function decorateExampleModals(main) {
     });
     customModal.showModal();
   });
-}
+}*/
 
 /**
  * Decorates the main element.
