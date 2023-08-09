@@ -64,6 +64,7 @@ function decorateExampleModals(main) {
     e.preventDefault();
     // Modals can be imported on-demand to prevent loading unnecessary code
     const { default: getModal } = await import('../blocks/modal/modal.js');
+    console.log("Hello");
     const simpleModal = await getModal('simple-modal', () => '<h2>Simple Modal Content</h2>');
     simpleModal.showModal();
   });
